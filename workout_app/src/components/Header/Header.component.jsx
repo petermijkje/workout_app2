@@ -18,7 +18,7 @@ function Header() {
       </div>
       <div className="sign-out-icon" id="icon-container">
         <LogOut />
-        <span className="header-text">Logout</span>
+        <span className="header-text">Login</span>
       </div>
     </div>
   )
