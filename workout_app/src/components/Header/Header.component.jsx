@@ -9,8 +9,6 @@ import './Header.styles.scss'
 const Header = () => {
   return (
     <div className="header">
-      {' '}
-      ``
       <Link to="/" className="menu-icon" id="icon-container">
         <Menu />
         <span className="header-text">Home</span>
