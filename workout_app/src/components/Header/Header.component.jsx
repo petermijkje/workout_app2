@@ -1,5 +1,6 @@
 import React from 'react'
 import { Menu, LogOut, User } from 'react-feather'
+import { Link } from 'react-router-dom'
 
 import './Header.styles.scss'
 
@@ -8,18 +9,18 @@ import './Header.styles.scss'
 const Header = () => {
   return (
     <div className="header">
-      <div className="menu-icon" id="icon-container">
+      <Link to="/" className="menu-icon" id="icon-container">
         <Menu />
         <span className="header-text">Home</span>
-      </div>
-      <div className="sign-in-icon" id="icon-container">
+      </Link>
+      <Link to="/profile" className="sign-in-icon" id="icon-container">
         <User />
         <span className="header-text">Profile</span>
-      </div>
-      <div className="sign-out-icon" id="icon-container">
+      </Link>
+      <Link to="/login" className="sign-out-icon" id="icon-container">
         <LogOut />
         <span className="header-text">Login</span>
-      </div>
+      </Link>
     </div>
   )
 }
