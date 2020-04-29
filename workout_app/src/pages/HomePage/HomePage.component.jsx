@@ -1,6 +1,6 @@
 import React from 'react'
 import './HomePage.styles.scss'
-import WorkoutPhoto from '../../homepage.jpg'
+// import WorkoutPhoto from '../../homepage.jpg'
 
 function HomePage() {
   return (
