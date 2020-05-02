@@ -21,7 +21,7 @@ function App() {
             <Route component={Error} />
           </Switch>
         </div>
-        <a>workout App</a>
+        <h1 style={{ textAlign: 'center' }}>workout App</h1>
       </div>
     </Router>
   )
