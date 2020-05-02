@@ -5,7 +5,6 @@ import HomePage from './pages/HomePage/HomePage.component'
 import Header from './components/Header/Header.component.jsx'
 import Profile from './components/profile/profile.component.jsx'
 import LoginAndLogout from './pages/login-and-logout/login-and-logout.component.jsx'
-// import ErrorPage from './component/error'
 
 import './App.scss'
 
@@ -13,7 +12,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <p>Workout app</p>
         <Header />
         <div className="content">
           <Switch>
@@ -23,6 +21,7 @@ function App() {
             <Route component={Error} />
           </Switch>
         </div>
+        <a>workout App</a>
       </div>
     </Router>
   )
