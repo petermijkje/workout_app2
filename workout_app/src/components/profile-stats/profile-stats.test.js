@@ -1,17 +1,14 @@
 import React from 'react'
-import ProfileStats from './components/Header/Header.component.jsx'
+import ProfileStats from './profile-stats.component'
 import { render } from '@testing-library/react'
-import { create } from 'react-test-renderer'
 
-import App from './App'
-
-describe('App', () => {
+describe('ProfileStats', () => {
   test('Renders', () => {
-    const {} = render(<App />)
+    const {} = render(<ProfileStats />)
   })
   test('renders workout app element', () => {
-    const { getByText } = render(<App />)
-    const linkElement = getByText(/workout app/i)
+    const { getByText } = render(<ProfileStats />)
+    const linkElement = getByText(/profile stats component/i)
     expect(linkElement).toBeInTheDocument()
   })
 })
