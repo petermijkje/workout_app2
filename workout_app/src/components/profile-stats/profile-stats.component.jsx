@@ -11,6 +11,7 @@ function ProfileStats() {
       <span>Height</span>
       <span>Sex</span>
       <span>Weight</span>
+      <span>Current Goal: </span>
     </div>
   )
 }
