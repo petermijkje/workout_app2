@@ -36,4 +36,9 @@ describe('ProfileStats', () => {
     const linkElement = getByText(/Weight/i)
     expect(linkElement).toBeInTheDocument()
   })
+  test('renders workout app element goals', () => {
+    const { getByText } = render(<ProfileStats />)
+    const linkElement = getByText(/Current Goal:/i)
+    expect(linkElement).toBeInTheDocument()
+  })
 })
