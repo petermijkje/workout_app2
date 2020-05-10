@@ -12,6 +12,7 @@ function ProfileStats() {
       <span>Sex</span>
       <span>Weight</span>
       <span>Current Goal: </span>
+      <span>on track?</span>
     </div>
   )
 }
