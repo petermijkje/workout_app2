@@ -43,7 +43,7 @@ describe('ProfileStats', () => {
   })
   test('renders workout app element goals', () => {
     const { getByText } = render(<ProfileStats />)
-    const linkElement = getByText(/on Goal?/i)
+    const linkElement = getByText(/on track?/i)
     expect(linkElement).toBeInTheDocument()
   })
 })
