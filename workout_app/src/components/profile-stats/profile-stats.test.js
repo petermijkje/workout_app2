@@ -17,7 +17,7 @@ describe('ProfileStats', () => {
     expect(linkElement).toBeInTheDocument()
   })
   test('renders workout app element Age', () => {
-    const { getByText } = render(<ProfileStats />)
+    const { getByText } = render(<ProfileStats age="age" />)
     const linkElement = getByText(/Age/i)
     expect(linkElement).toBeInTheDocument()
   })

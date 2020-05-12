@@ -16,11 +16,11 @@ const ProfileStats = ({
     Profile Stats Component
     <span>{name}</span>
     <span>{age}</span>
-    <span>Height</span>
-    <span>Sex</span>
-    <span>Weight</span>
-    <span>current goal:</span>
-    <span>on track?</span>
+    <span>{height}</span>
+    <span>{sex}</span>
+    <span>{weight}</span>
+    <span>{currentGoal}</span>
+    <span>{onTrack}</span>
   </div>
 )
 
