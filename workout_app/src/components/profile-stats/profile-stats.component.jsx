@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 
 import './profile-stats.styles.scss'
 
@@ -13,7 +12,7 @@ const ProfileStats = ({
   onTrack,
 }) => (
   <div>
-    Profile Stats Component
+    <h1>Profile Stats</h1>
     <span>{name}</span>
     <span>{age}</span>
     <span>{height}</span>

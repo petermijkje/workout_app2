@@ -8,7 +8,7 @@ describe('ProfileStats', () => {
   })
   test('renders workout app element', () => {
     const { getByText } = render(<ProfileStats />)
-    const linkElement = getByText(/profile stats component/i)
+    const linkElement = getByText(/profile stats/i)
     expect(linkElement).toBeInTheDocument()
   })
   test('renders workout app element Name', () => {
@@ -22,27 +22,27 @@ describe('ProfileStats', () => {
     expect(linkElement).toBeInTheDocument()
   })
   test('renders workout app element Height', () => {
-    const { getByText } = render(<ProfileStats />)
+    const { getByText } = render(<ProfileStats height="height" />)
     const linkElement = getByText(/Height/i)
     expect(linkElement).toBeInTheDocument()
   })
   test('renders workout app element Sex', () => {
-    const { getByText } = render(<ProfileStats />)
+    const { getByText } = render(<ProfileStats sex="sex" />)
     const linkElement = getByText(/Sex/i)
     expect(linkElement).toBeInTheDocument()
   })
   test('renders workout app element Weight', () => {
-    const { getByText } = render(<ProfileStats />)
+    const { getByText } = render(<ProfileStats weight="weight" />)
     const linkElement = getByText(/Weight/i)
     expect(linkElement).toBeInTheDocument()
   })
   test('renders workout app element goals', () => {
-    const { getByText } = render(<ProfileStats />)
+    const { getByText } = render(<ProfileStats currentGoal="current goal:" />)
     const linkElement = getByText(/Current Goal:/i)
     expect(linkElement).toBeInTheDocument()
   })
   test('renders workout app element goals', () => {
-    const { getByText } = render(<ProfileStats />)
+    const { getByText } = render(<ProfileStats onTrack="on track?" />)
     const linkElement = getByText(/on track?/i)
     expect(linkElement).toBeInTheDocument()
   })
