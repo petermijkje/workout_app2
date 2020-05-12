@@ -4,7 +4,7 @@ import { render } from '@testing-library/react'
 
 describe('ProfileStats', () => {
   test('Renders', () => {
-    const {} = render(<ProfileStats />)
+    render(<ProfileStats />)
   })
   test('renders workout app element', () => {
     const { getByText } = render(<ProfileStats />)
@@ -12,8 +12,8 @@ describe('ProfileStats', () => {
     expect(linkElement).toBeInTheDocument()
   })
   test('renders workout app element Name', () => {
-    const { getByText } = render(<ProfileStats />)
-    const linkElement = getByText(/Your Name Here/i)
+    const { getByText } = render(<ProfileStats name="name" />)
+    const linkElement = getByText(/name/i)
     expect(linkElement).toBeInTheDocument()
   })
   test('renders workout app element Age', () => {
