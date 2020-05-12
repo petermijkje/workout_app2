@@ -4,7 +4,7 @@ import { useState } from 'react'
 import './profile-stats.styles.scss'
 
 function ProfileStats() {
-  const [name] = useState('Peter')
+  const [name] = useState('Your Name Here')
   return (
     <div>
       Profile Stats Component

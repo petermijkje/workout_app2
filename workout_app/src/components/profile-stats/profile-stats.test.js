@@ -13,7 +13,7 @@ describe('ProfileStats', () => {
   })
   test('renders workout app element Name', () => {
     const { getByText } = render(<ProfileStats />)
-    const linkElement = getByText(/{name}/i)
+    const linkElement = getByText(/Your Name Here/i)
     expect(linkElement).toBeInTheDocument()
   })
   test('renders workout app element Age', () => {
