@@ -16,12 +16,12 @@ class Profile extends React.Component {
       onTrack: 'Yes',
     }
   }
-  render(props) {
-    const { ...rest } = this.state
+  render() {
+    const { ...allProfileProps } = this.state
     return (
       <div className="profile">
         My Profile
-        <ProfileStats {...rest} />
+        <ProfileStats {...allProfileProps} />
       </div>
     )
   }
