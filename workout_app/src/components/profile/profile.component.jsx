@@ -16,6 +16,7 @@ class Profile extends React.Component {
       onTrack: 'Yes',
     }
   }
+
   render() {
     const { ...allProfileProps } = this.state
     return (
