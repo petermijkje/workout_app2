@@ -17,7 +17,7 @@ class Profile extends React.Component {
       onTrack: 'Yes',
       data: [
         {
-          id: 'japan',
+          id: 'Bench Press',
           color: 'hsl(232, 70%, 50%)',
           data: [
             {
@@ -71,7 +71,7 @@ class Profile extends React.Component {
           ],
         },
         {
-          id: 'france',
+          id: 'Squat',
           color: 'hsl(220, 70%, 50%)',
           data: [
             {
@@ -125,7 +125,7 @@ class Profile extends React.Component {
           ],
         },
         {
-          id: 'us',
+          id: 'Deadlift',
           color: 'hsl(252, 70%, 50%)',
           data: [
             {
@@ -179,7 +179,7 @@ class Profile extends React.Component {
           ],
         },
         {
-          id: 'germany',
+          id: 'Shoulder Press',
           color: 'hsl(64, 70%, 50%)',
           data: [
             {
@@ -233,7 +233,7 @@ class Profile extends React.Component {
           ],
         },
         {
-          id: 'norway',
+          id: 'Bent Over Row',
           color: 'hsl(156, 70%, 50%)',
           data: [
             {
