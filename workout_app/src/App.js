@@ -8,6 +8,8 @@ import About from './pages/About/About.component.jsx'
 import Profile from './components/profile/profile.component.jsx'
 import LoginAndLogout from './pages/login-and-logout/login-and-logout.component.jsx'
 
+import Photo from './workout.png'
+
 import './App.scss'
 
 function App() {
@@ -15,17 +17,18 @@ function App() {
     <Router>
       <div className="App">
         <Header />
+
         <div className="content">
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/about" component={About} />
             <Route exact path="/contact" component={Contact} />
-            <Route path="/profile" component={Profile} />
-            <Route path="/Login" component={LoginAndLogout} />
             <Route component={Error} />
           </Switch>
+          <Route path="/profile" component={Profile} />
+          <Route path="/Login" component={LoginAndLogout} />
+          <img className="image" src={Photo} alt="Lady in Jumping Lunge" />
         </div>
-        <h1 style={{ textAlign: 'center' }}>workout App</h1>
       </div>
     </Router>
   )

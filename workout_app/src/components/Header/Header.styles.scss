@@ -1,15 +1,11 @@
 .header {
-  background-color: #0099ff;
+  background-color: white;
   position: absolute;
   color: white;
   font-weight: bold;
   font-size: 16px;
   width: 100%;
   display: flex;
-}
-
-.header > a:nth-child(3) {
-  margin-left: auto;
 }
 
 #icon-container {

@@ -1,3 +1,20 @@
-.content {
-  padding-top: 67px;
+/* For mobile phones: */
+@media only screen and (min-width: 375px) {
+  .content {
+    padding-top: 67px;
+  }
+
+  .image {
+    padding-top: 210px;
+    position: center;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
 }
