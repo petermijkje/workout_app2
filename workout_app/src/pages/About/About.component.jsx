@@ -1,5 +1,5 @@
 import React from 'react'
-import './HomePage.styles.scss'
+import './about.styles.scss'
 
 function About() {
   return <div className="about">About Page</div>
