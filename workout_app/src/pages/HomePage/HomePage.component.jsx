@@ -16,6 +16,9 @@ function HomePage() {
         </span>
       </div>
       <CustomButton />
+      <div className="sign-up-text">
+        Don't have an account? <u to="login">SIGN UP</u>
+      </div>
     </div>
   )
 }
