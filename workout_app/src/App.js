@@ -17,7 +17,7 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-
+        <img className="image" src={Photo} alt="Lady in Jumping Lunge" />
         <div className="content">
           <Switch>
             <Route exact path="/" component={HomePage} />
@@ -27,7 +27,6 @@ function App() {
           </Switch>
           <Route path="/profile" component={Profile} />
           <Route path="/Login" component={LoginAndLogout} />
-          <img className="image" src={Photo} alt="Lady in Jumping Lunge" />
         </div>
       </div>
     </Router>

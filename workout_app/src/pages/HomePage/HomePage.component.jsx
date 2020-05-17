@@ -6,7 +6,7 @@ function HomePage() {
   return (
     <div className="homepage">
       <div className="workout-picture-div">
-        <h1 style={{ textAlign: 'center' }}>workout App</h1>
+        <h1>RETRAIN</h1>
       </div>
     </div>
   )
