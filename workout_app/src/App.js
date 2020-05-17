@@ -1,5 +1,6 @@
 import React from 'react'
 import { Switch, BrowserRouter as Router, Route } from 'react-router-dom'
+import Photo from './workout.png'
 
 import HomePage from './pages/HomePage/HomePage.component'
 import Header from './components/Header/Header.component.jsx'
@@ -9,6 +10,7 @@ import Profile from './components/profile/profile.component.jsx'
 import LoginAndLogout from './pages/login-and-logout/login-and-logout.component.jsx'
 
 import './App.scss'
+// import './debug.css'
 
 function App() {
   return (
@@ -18,11 +20,12 @@ function App() {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/about" component={About} />
-          <Route exact path="/contact" component={Contact} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/Login" component={LoginAndLogout} />
           <Route component={Error} />
         </Switch>
-        <Route path="/profile" component={Profile} />
-        <Route path="/Login" component={LoginAndLogout} />
+        {/* <Route path="/profile" component={Profile} /> */}
+        <img className="image" src={Photo} alt="Lady in Jumping Lunge" />
       </div>
     </Router>
   )

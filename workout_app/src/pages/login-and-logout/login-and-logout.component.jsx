@@ -1,5 +1,9 @@
 import React from 'react'
 
-const Login = () => <div className="login">Login Page</div>
+import './login-and-logout.styles.scss'
+
+function Login() {
+  return <div className="login">Login Page</div>
+}
 
 export default Login
