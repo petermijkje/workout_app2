@@ -21,51 +21,51 @@ class Profile extends React.Component {
           color: 'hsl(232, 70%, 50%)',
           data: [
             {
-              x: 'plane',
+              x: '2/1',
               y: 77,
             },
             {
-              x: 'helicopter',
+              x: '2/15',
               y: 8,
             },
             {
-              x: 'boat',
+              x: '3/1',
               y: 111,
             },
             {
-              x: 'train',
+              x: '3/15',
               y: 289,
             },
             {
-              x: 'subway',
+              x: '4/1',
               y: 134,
             },
             {
-              x: 'bus',
+              x: '4/15',
               y: 204,
             },
             {
-              x: 'car',
+              x: '5/1',
               y: 197,
             },
             {
-              x: 'moto',
+              x: '5/15',
               y: 266,
             },
             {
-              x: 'bicycle',
+              x: '6/1',
               y: 287,
             },
             {
-              x: 'horse',
+              x: '6/15',
               y: 232,
             },
             {
-              x: 'skateboard',
+              x: '7/1',
               y: 274,
             },
             {
-              x: 'others',
+              x: '7/15',
               y: 62,
             },
           ],
@@ -75,51 +75,51 @@ class Profile extends React.Component {
           color: 'hsl(220, 70%, 50%)',
           data: [
             {
-              x: 'plane',
+              x: '2/1',
               y: 45,
             },
             {
-              x: 'helicopter',
+              x: '2/15',
               y: 87,
             },
             {
-              x: 'boat',
+              x: '3/1',
               y: 223,
             },
             {
-              x: 'train',
+              x: '3/15',
               y: 261,
             },
             {
-              x: 'subway',
+              x: '4/1',
               y: 144,
             },
             {
-              x: 'bus',
+              x: '4/15',
               y: 126,
             },
             {
-              x: 'car',
+              x: '5/1',
               y: 39,
             },
             {
-              x: 'moto',
+              x: '5/15',
               y: 235,
             },
             {
-              x: 'bicycle',
+              x: '6/1',
               y: 174,
             },
             {
-              x: 'horse',
+              x: '6/15',
               y: 116,
             },
             {
-              x: 'skateboard',
+              x: '7/1',
               y: 26,
             },
             {
-              x: 'others',
+              x: '7/15',
               y: 50,
             },
           ],
@@ -129,51 +129,51 @@ class Profile extends React.Component {
           color: 'hsl(252, 70%, 50%)',
           data: [
             {
-              x: 'plane',
+              x: '2/1',
               y: 130,
             },
             {
-              x: 'helicopter',
+              x: '2/15',
               y: 133,
             },
             {
-              x: 'boat',
+              x: '3/1',
               y: 295,
             },
             {
-              x: 'train',
+              x: '3/15',
               y: 258,
             },
             {
-              x: 'subway',
+              x: '4/1',
               y: 200,
             },
             {
-              x: 'bus',
+              x: '4/15',
               y: 147,
             },
             {
-              x: 'car',
+              x: '5/1',
               y: 39,
             },
             {
-              x: 'moto',
+              x: '5/15',
               y: 279,
             },
             {
-              x: 'bicycle',
+              x: '6/1',
               y: 228,
             },
             {
-              x: 'horse',
+              x: '6/15',
               y: 231,
             },
             {
-              x: 'skateboard',
+              x: '7/1',
               y: 112,
             },
             {
-              x: 'others',
+              x: '7/15',
               y: 118,
             },
           ],
@@ -183,51 +183,51 @@ class Profile extends React.Component {
           color: 'hsl(64, 70%, 50%)',
           data: [
             {
-              x: 'plane',
+              x: '2/1',
               y: 198,
             },
             {
-              x: 'helicopter',
+              x: '2/15',
               y: 286,
             },
             {
-              x: 'boat',
+              x: '3/1',
               y: 215,
             },
             {
-              x: 'train',
+              x: '3/15',
               y: 39,
             },
             {
-              x: 'subway',
+              x: '4/1',
               y: 220,
             },
             {
-              x: 'bus',
+              x: '4/15',
               y: 251,
             },
             {
-              x: 'car',
+              x: '5/1',
               y: 267,
             },
             {
-              x: 'moto',
+              x: '5/15',
               y: 277,
             },
             {
-              x: 'bicycle',
+              x: '6/1',
               y: 33,
             },
             {
-              x: 'horse',
+              x: '6/15',
               y: 3,
             },
             {
-              x: 'skateboard',
+              x: '7/1',
               y: 75,
             },
             {
-              x: 'others',
+              x: '7/15',
               y: 207,
             },
           ],
@@ -237,51 +237,51 @@ class Profile extends React.Component {
           color: 'hsl(156, 70%, 50%)',
           data: [
             {
-              x: 'plane',
+              x: '2/1',
               y: 123,
             },
             {
-              x: 'helicopter',
+              x: '2/15',
               y: 141,
             },
             {
-              x: 'boat',
+              x: '3/1',
               y: 145,
             },
             {
-              x: 'train',
+              x: '3/15',
               y: 35,
             },
             {
-              x: 'subway',
+              x: '4/1',
               y: 44,
             },
             {
-              x: 'bus',
+              x: '4/15',
               y: 43,
             },
             {
-              x: 'car',
+              x: '5/1',
               y: 250,
             },
             {
-              x: 'moto',
+              x: '5/15',
               y: 122,
             },
             {
-              x: 'bicycle',
+              x: '6/1',
               y: 175,
             },
             {
-              x: 'horse',
+              x: '6/15',
               y: 34,
             },
             {
-              x: 'skateboard',
+              x: '7/1',
               y: 230,
             },
             {
-              x: 'others',
+              x: '7/15',
               y: 89,
             },
           ],

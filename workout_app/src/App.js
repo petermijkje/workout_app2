@@ -16,6 +16,8 @@ function App() {
         <div className="content">
           <Switch>
             <Route exact path="/" component={HomePage} />
+            <Route path="/about" component={About} />
+            <Route exact path="/contact" component={contact} />
             <Route path="/profile" component={Profile} />
             <Route path="/Login" component={LoginAndLogout} />
             <Route component={Error} />
