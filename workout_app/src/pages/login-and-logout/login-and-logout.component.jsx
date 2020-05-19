@@ -1,11 +1,14 @@
 import React from 'react'
 import CustomButton from '../../components/custom-button/custom-button.component'
+import { BsEyeSlashFill } from 'react-icons/bs'
 
 import './login-and-logout.styles.scss'
+import RetrainLogo from '../../components/retrain-logo/RetrainLogo.component'
 
 function Login() {
   return (
     <div className="login">
+      <RetrainLogo />
       <div className="login-div">
         <div className="login-title">Log in</div>
         <form>
@@ -17,7 +20,7 @@ function Login() {
               placeholder="Email"
             />
           </label>
-          <hr />
+          <hr className="hr-email" />
           <label>
             <input
               className="password"
@@ -26,7 +29,8 @@ function Login() {
               placeholder="Password"
             />
           </label>
-          <hr />
+          <hr className="hr-password" />
+          <BsEyeSlashFill className="eye-slash" />
           <CustomButton />
         </form>
       </div>

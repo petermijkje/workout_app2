@@ -3,11 +3,10 @@
 }
 
 .login-div {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   position: absolute;
   height: 406px;
   width: 375px;
-  opacity: 0.7;
   top: 406px;
 }
 
@@ -21,6 +20,34 @@
   letter-spacing: 2px;
 }
 
-hr {
+.email {
+  position: absolute;
+  top: 113.5px;
+  left: 48.5px;
+}
+
+.hr-email {
+  position: absolute;
   width: 280px;
+  top: 130.5px;
+  left: 48.5px;
+}
+
+.password {
+  position: absolute;
+  left: 48.5px;
+  top: 160px;
+}
+
+.hr-password {
+  position: absolute;
+  width: 280px;
+  top: 178px;
+  left: 48.5px;
+}
+
+.eye-slash {
+  position: absolute;
+  top: 165px;
+  right: 48.5px;
 }
