@@ -1,4 +1,5 @@
 import React from 'react'
+import CustomButton from '../../components/custom-button/custom-button.component'
 
 import './login-and-logout.styles.scss'
 
@@ -26,7 +27,7 @@ function Login() {
             />
           </label>
           <hr />
-          <input type="submit" value="Submit" />
+          <CustomButton />
         </form>
       </div>
     </div>
