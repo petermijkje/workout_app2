@@ -20,6 +20,19 @@
   position: absolute;
   top: 113.5px;
   left: 48.5px;
+  outline: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0) !important;
+  letter-spacing: 2px;
+  width: 280px;
+  height: 20px;
+  text-transform: uppercase;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
 .hr-email {
@@ -33,6 +46,12 @@
   position: absolute;
   left: 48.5px;
   top: 160px;
+  outline: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0) !important;
+  letter-spacing: 2px;
+  width: 280px;
+  height: 20px;
 }
 
 .hr-password {
