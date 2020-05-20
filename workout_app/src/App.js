@@ -14,20 +14,18 @@ import './App.scss'
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Header />
-        <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/Login" component={LoginAndLogout} />
-          <Route component={Error} />
-        </Switch>
-        {/* <Route path="/profile" component={Profile} /> */}
-        <img className="image" src={Photo} alt="Lady in Jumping Lunge" />
-      </div>
-    </Router>
+    <div className="App">
+      <Header />
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/Login" component={LoginAndLogout} />
+        <Route component={Error} />
+      </Switch>
+      {/* <Route path="/profile" component={Profile} /> */}
+      <img className="image" src={Photo} alt="Lady in Jumping Lunge" />
+    </div>
   )
 }
 

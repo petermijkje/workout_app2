@@ -4,34 +4,38 @@ import { IoMdMenu } from 'react-icons/io'
 
 import './Header.styles.scss'
 
-//change classnames on all
-function showMenu() {
-  return <div>contacts</div>
-}
-
 class Header extends React.Component {
   constructor() {
     super()
-    this.state = {}
+    this.state = {
+      showResults: false,
+    }
+    this.toggleDiv = this.toggleDiv.bind(this)
+  }
+  toggleDiv = () => {
+    const { showResults } = this.state
+    this.setState({ showResults: !showResults })
   }
   render() {
     return (
       <div className="header">
-        <Link to="/" className="menu-icon" id="icon-container">
-          <IoMdMenu
-            color="black"
-            size="36px"
-            strokeWidth="3px"
-            onClick={showMenu}
-          />
-          <span className="header-text"></span>
-        </Link>
-        {/* <Link to="/contact">
-          <span className="header-text">contact</span>
-        </Link> */}
+        <IoMdMenu id="icon-container" onClick={this.toggleDiv} />
+        {this.state.showResults && <Results />}
       </div>
     )
   }
 }
+
+const Results = () => (
+  <div>
+    {/* <Link  className="menu-icon" id="icon-container"> */}
+    <span className="header-text" style={{ position: 'absolute' }}>
+      <li>Login</li>
+      <li>about</li>
+      <li>Contact</li>
+    </span>
+    {/* </Link> */}
+  </div>
+)
 
 export default Header
