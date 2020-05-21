@@ -15,6 +15,7 @@ import './App.scss'
 function App() {
   return (
     <div className="App">
+      <img className="image" src={Photo} alt="Lady in Jumping Lunge" />
       <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
@@ -24,7 +25,6 @@ function App() {
         <Route component={Error} />
       </Switch>
       {/* <Route path="/profile" component={Profile} /> */}
-      <img className="image" src={Photo} alt="Lady in Jumping Lunge" />
     </div>
   )
 }

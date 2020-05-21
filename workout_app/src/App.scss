@@ -3,7 +3,7 @@
 /* For mobile phones: */
 @media only screen and (min-width: 374px) {
   .app {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   .content {
     padding-top: 67px;
@@ -11,8 +11,10 @@
 
   .image {
     padding-top: 67px;
-    position: center;
+    // position: center;
     width: 100%;
+    z-index: -1;
+    position: absolute;
   }
 }
 

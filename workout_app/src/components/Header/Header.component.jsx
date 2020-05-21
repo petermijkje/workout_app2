@@ -27,14 +27,29 @@ class Header extends React.Component {
 }
 
 const Results = () => (
-  <div>
-    {/* <Link  className="menu-icon" id="icon-container"> */}
-    <span className="header-text" style={{ position: 'absolute' }}>
-      <li>Login</li>
-      <li>about</li>
-      <li>Contact</li>
-    </span>
-    {/* </Link> */}
+  <div className="menu-drop">
+    <div className="header-text" style={{ position: 'absolute' }}>
+      <div className="header-text-div">
+        <Link to="/" className="header-link">
+          <li>Home</li>
+        </Link>
+      </div>
+      <div className="header-text-div">
+        <Link to="/login" className="header-link">
+          <li>Login</li>
+        </Link>
+      </div>
+      <div className="header-text-div">
+        <Link to="/about" className="header-link">
+          <li>About</li>
+        </Link>
+      </div>
+      <div className="header-text-div">
+        <Link to="/contact" className="header-link">
+          <li>Contact</li>
+        </Link>
+      </div>
+    </div>
   </div>
 )
 
