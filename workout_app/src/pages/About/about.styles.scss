@@ -1,17 +1,16 @@
 .about {
-  top: 67px;
+  top: 239px;
   position: absolute;
-  height: 745px;
+  height: 570px;
   width: 375px;
   color: black;
-  background-color: white;
-  opacity: 0.7;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 0;
 }
 
 h1 {
+  width: 300px;
   position: absolute;
-  top: 170px;
-  left: 50px;
   font-family: 'roboto';
   letter-spacing: 5px;
   font-size: 60px;
@@ -21,15 +20,22 @@ h1 {
   width: 300px;
   position: absolute;
   left: 25px;
-  top: 200px;
   text-align: center;
   font-size: 14px;
 }
 
 .explanation-text {
   position: absolute;
-  left: 50px;
+  left: 60px;
   width: 200px;
   height: auto;
   font-size: 12px;
+}
+
+.break-line {
+  width: 200;
+  position: center;
+  border-width: 1px;
+  color: grey;
+  background-color: grey;
 }
