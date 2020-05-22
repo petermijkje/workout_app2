@@ -6,13 +6,10 @@ import './login-and-logout.styles.scss'
 import RetrainLogo from '../../components/retrain-logo/RetrainLogo.component'
 
 function Login() {
-  //
-  const eyeVar = <BsEyeFill />
-  const eyeSlashVar = <BsEyeSlashFill />
-  //
-  const [eyeSlashIcon, eyeSlash] = useState(eyeSlashVar)
+  //toggle function for show/hide password
+  const [eyeSlashIcon, eyeSlash] = useState(true)
   function handleEyeSlash() {
-    eyeSlash(eyeSlashIcon === eyeSlashVar ? eyeVar : eyeSlashVar)
+    eyeSlash(!eyeSlashIcon)
   }
   return (
     <div className="login">
@@ -29,18 +26,35 @@ function Login() {
             />
           </label>
           <hr className="hr-email" />
-          <label>
-            <input
-              className="password"
-              type="password"
-              name="email"
-              placeholder="Password"
-            />
-          </label>
-          <hr className="hr-password" />
+          {/* switch case to show or hide password input */}
           <div className="eye-slash" onClick={handleEyeSlash}>
-            {eyeSlashIcon}
+            {eyeSlashIcon ? (
+              <div>
+                <label>
+                  <input
+                    className="password"
+                    type="password"
+                    name="email"
+                    placeholder="Password"
+                  />
+                </label>
+                <BsEyeSlashFill className="eye" />
+              </div>
+            ) : (
+              <div>
+                <label>
+                  <input
+                    className="password"
+                    type="text"
+                    name="email"
+                    placeholder="Password"
+                  />
+                </label>
+                <BsEyeFill className="eye" />
+              </div>
+            )}
           </div>
+          <hr className="hr-password" />
         </form>
       </div>
       <CustomButton />
