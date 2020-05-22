@@ -6,13 +6,13 @@ import './login-and-logout.styles.scss'
 import RetrainLogo from '../../components/retrain-logo/RetrainLogo.component'
 
 function Login() {
-  const eyeComponent = <BsEyeFill />
-  const eyeSlashComponent = <BsEyeSlashFill />
-  const [eyeSlashIcon, eyeSlash] = useState(eyeSlashComponent)
-  function handleClick() {
-    eyeSlash(
-      eyeSlashIcon === eyeSlashComponent ? eyeComponent : eyeSlashComponent
-    )
+  //
+  const eyeVar = <BsEyeFill />
+  const eyeSlashVar = <BsEyeSlashFill />
+  //
+  const [eyeSlashIcon, eyeSlash] = useState(eyeSlashVar)
+  function handleEyeSlash() {
+    eyeSlash(eyeSlashIcon === eyeSlashVar ? eyeVar : eyeSlashVar)
   }
   return (
     <div className="login">
@@ -38,7 +38,7 @@ function Login() {
             />
           </label>
           <hr className="hr-password" />
-          <div className="eye-slash" onClick={handleClick}>
+          <div className="eye-slash" onClick={handleEyeSlash}>
             {eyeSlashIcon}
           </div>
         </form>
