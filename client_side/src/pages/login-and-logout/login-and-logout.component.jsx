@@ -6,7 +6,7 @@ import './login-and-logout.styles.scss'
 import RetrainLogo from '../../components/retrain-logo/RetrainLogo.component'
 
 function Login() {
-  //toggle function for show/hide password
+  //toggle function/state for show/hide password
   const [eyeSlashIcon, eyeSlash] = useState(true)
   function handleEyeSlash() {
     eyeSlash(!eyeSlashIcon)
