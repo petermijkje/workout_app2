@@ -8,7 +8,7 @@ import Contact from './pages/Contact/Contact.component.jsx'
 import About from './pages/About/About.component.jsx'
 import LoginAndLogout from './pages/login-and-logout/login-and-logout.component.jsx'
 import Error from './pages/Error/Error.component.jsx'
-// import Profile from './components/profile/profile.component.jsx'
+import Profile from './components/profile/profile.component.jsx'
 
 import './App.scss'
 // import './debug.css'
@@ -23,9 +23,9 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="/Login" component={LoginAndLogout} />
+        <Route path="/profile" component={Profile} />
         <Route component={Error} />
       </Switch>
-      {/* <Route path="/profile" component={Profile} /> */}
     </div>
   )
 }

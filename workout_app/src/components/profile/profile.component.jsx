@@ -3,6 +3,7 @@ import ProfileStats from '../profile-stats/profile-stats.component'
 
 import './profile.styles.scss'
 import MyResponsiveLine from '../statistics/statistics.component'
+import HumanPhoto from '../../images/Human-Body.svg'
 
 class Profile extends React.Component {
   constructor(props) {
@@ -291,13 +292,15 @@ class Profile extends React.Component {
   }
 
   render() {
-    const { ...allProfileProps } = this.state
+    // const { ...allProfileProps } = this.state
     const { data } = this.state
     return (
       <div className="profile">
         My Profile
-        <ProfileStats {...allProfileProps} />
-        <MyResponsiveLine data={data} />
+        {/* <ProfileStats {...allProfileProps} /> */}
+        {/* <MyResponsiveLine data={data} /> */}
+        <br />
+        <img src={HumanPhoto} className="human-photo" />
       </div>
     )
   }
