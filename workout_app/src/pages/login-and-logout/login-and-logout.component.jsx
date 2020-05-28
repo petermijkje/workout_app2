@@ -11,6 +11,18 @@ function Login() {
   function handleEyeSlash() {
     eyeSlash(!eyeSlashIcon)
   }
+  //logic for email
+  const [email, setEmail] = useState('')
+  function handleEmail(e) {
+    setEmail(e.target.value)
+    console.log({ email })
+  }
+  //logic for password
+  const [password, setPassword] = useState('')
+  function handlePassword(e) {
+    setPassword(e.target.value)
+    console.log({ password })
+  }
   return (
     <div className="login">
       <RetrainLogo />
@@ -22,7 +34,8 @@ function Login() {
               className="email"
               type="text"
               name="email"
-              placeholder="Email"
+              placeholder="email"
+              onChange={handleEmail}
             />
           </label>
           <hr className="hr-email" />
@@ -36,6 +49,7 @@ function Login() {
                     type="password"
                     name="email"
                     placeholder="Password"
+                    onChange={handlePassword}
                   />
                 </label>
                 <BsEyeSlashFill className="eye" />
