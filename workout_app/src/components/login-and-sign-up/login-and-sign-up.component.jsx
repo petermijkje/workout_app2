@@ -27,8 +27,12 @@ function LoginAndSignUp() {
   return (
     <div>
       <div className="login-div">
-        <div className="login-title">
-          {login ? <div>Log in</div> : <div>Sign Up</div>}
+        <div>
+          {login ? (
+            <div className="login-title">Log in</div>
+          ) : (
+            <div className="sign-up-title">Sign Up</div>
+          )}
         </div>
         <form className="form-inputs">
           <label>
