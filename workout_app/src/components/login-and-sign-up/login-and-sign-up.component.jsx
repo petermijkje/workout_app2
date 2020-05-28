@@ -4,8 +4,10 @@ import { BsEyeSlashFill, BsEyeFill } from 'react-icons/bs'
 
 function LoginAndSignUp() {
   //toggle between login and signup
-  const [login] = useState(false)
-
+  const [login, switchInstance] = useState(false)
+  function switchLogin() {
+    switchInstance(!login)
+  }
   //toggle function/state for show/hide password
   const [eyeSlashIcon, eyeSlash] = useState(false)
   function handleEyeSlash() {
@@ -15,13 +17,11 @@ function LoginAndSignUp() {
   const [email, setEmail] = useState('')
   function handleEmail(e) {
     setEmail(e.target.value)
-    console.log({ email })
   }
   //logic for password
   const [password, setPassword] = useState('')
   function handlePassword(e) {
     setPassword(e.target.value)
-    console.log({ password })
   }
 
   return (
@@ -41,6 +41,7 @@ function LoginAndSignUp() {
               type="text"
               name="email"
               placeholder="email"
+              value={email}
               onChange={handleEmail}
             />
           </label>
@@ -54,6 +55,7 @@ function LoginAndSignUp() {
                     className="password"
                     type="password"
                     name="email"
+                    value={password}
                     placeholder="Password"
                     onChange={handlePassword}
                   />
@@ -78,6 +80,10 @@ function LoginAndSignUp() {
         </form>
       </div>
       <CustomButton />
+      <div className="sign-up-text">
+        Already have an account?{' '}
+        <u onClick={switchLogin}>{login ? 'SIGNUP' : 'LOGIN'}</u>
+      </div>
     </div>
   )
 }
