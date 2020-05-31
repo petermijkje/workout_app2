@@ -27,6 +27,10 @@ class Profile extends React.Component {
       // adonis_belt: '#65b19d',
     }
     this.chestFunction = this.chestFunction.bind(this)
+    this.shouldersFunction = this.shouldersFunction.bind(this)
+    this.absFunction = this.absFunction.bind(this)
+    this.armsFunction = this.armsFunction.bind(this)
+    this.legsFunction = this.legsFunction.bind(this)
   }
   chestFunction = () => {
     const toggle = this.state.chest === '#fec2a1' ? 'red' : '#fec2a1'
