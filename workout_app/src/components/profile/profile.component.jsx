@@ -82,6 +82,7 @@ class Profile extends React.Component {
             width="189.349"
             height="545.554"
             viewBox="0 0 189.349 545.554"
+            filter="drop-shadow(6px 6px 6px rgba(0, 0, 0, .7))"
           >
             <g className="Human-Body" transform="translate(-90.838 -69.348)">
               <g className="Extra_bits" data-name="Extra bits">
