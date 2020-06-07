@@ -3,6 +3,7 @@ import React from 'react'
 import './login-and-logout.styles.scss'
 import RetrainLogo from '../../components/retrain-logo/RetrainLogo.component'
 import LoginAndSignUp from '../../components/login-and-sign-up/login-and-sign-up.component'
+import MainProfile from '../../components/main-profile-page/main-profile-page.component'
 
 class Login extends React.Component {
   constructor() {
@@ -16,7 +17,9 @@ class Login extends React.Component {
     return (
       <div>
         {isLoggedIn ? (
-          <div> main Page </div>
+          <div>
+            <MainProfile />
+          </div>
         ) : (
           <div className="login">
             <RetrainLogo />
