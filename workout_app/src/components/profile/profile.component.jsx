@@ -61,21 +61,23 @@ class Profile extends React.Component {
         {/* <ProfileStats {...allProfileProps} /> */}
         {/* <MyResponsiveLine data={data} /> */}
         <br />
-        <button className="anatomy-button" onClick={this.chestFunction}>
-          Chest
-        </button>
-        <button className="anatomy-button" onClick={this.shouldersFunction}>
-          Shoulders
-        </button>
-        <button className="anatomy-button" onClick={this.absFunction}>
-          Abs
-        </button>
-        <button className="anatomy-button" onClick={this.armsFunction}>
-          arms
-        </button>
-        <button className="anatomy-button" onClick={this.legsFunction}>
-          legs
-        </button>
+        <div className="anatomy-button-div">
+          <button className="anatomy-button" onClick={this.chestFunction}>
+            Chest
+          </button>
+          <button className="anatomy-button" onClick={this.shouldersFunction}>
+            Shoulders
+          </button>
+          <button className="anatomy-button" onClick={this.absFunction}>
+            Abs
+          </button>
+          <button className="anatomy-button" onClick={this.armsFunction}>
+            arms
+          </button>
+          <button className="anatomy-button" onClick={this.legsFunction}>
+            legs
+          </button>
+        </div>
         <div className="human-svg">
           <svg
             xmlns="http://www.w3.org/2000/svg"
