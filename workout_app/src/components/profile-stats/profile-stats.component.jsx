@@ -11,7 +11,7 @@ const ProfileStats = ({
   currentGoal,
   onTrack,
 }) => (
-  <div>
+  <div className="profile-stats">
     <h1>Profile Stats</h1>
     <span>{name}</span>
     <span>{age}</span>

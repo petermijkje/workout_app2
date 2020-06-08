@@ -1,6 +1,9 @@
 import React from 'react'
 import Profile from '../profile/profile.component'
 
+//components
+import ActivityComponent from '../activity/activity.component'
+
 //images
 import WorkoutPhoto from '../../images/homepage2.jpg'
 import Home from '../../images/home.png'
@@ -9,17 +12,20 @@ import Activity from '../../images/activity.png'
 import Dumbbell from '../../images/dumbbell.png'
 
 import './main-profile-page.styles.scss'
+import ProfileStats from '../profile-stats/profile-stats.component'
 
 class MainProfile extends React.Component {
   constructor() {
     super()
     this.state = {
       blueLine: true,
+      secondBlueLine: false,
       workout: false,
       activity: false,
       profile: false,
     }
     this.handleBlueLine = this.handleBlueLine.bind(this)
+    this.handleSecondBlueLine = this.handleSecondBlueLine.bind(this)
     this.handleHome = this.handleHome.bind(this)
     this.handleWorkout = this.handleWorkout.bind(this)
     this.handleActivity = this.handleActivity.bind(this)
@@ -51,18 +57,31 @@ class MainProfile extends React.Component {
   }
 
   handleBlueLine() {
-    const { blueLine } = this.state
+    const { blueLine, secondBlueLine } = this.state
+    this.setState({ blueLine: !blueLine })
+    this.setState({ secondBlueLine: !secondBlueLine })
+  }
+  handleSecondBlueLine() {
+    const { secondBlueLine, blueLine } = this.state
+    this.setState({ secondBlueLine: !secondBlueLine })
     this.setState({ blueLine: !blueLine })
   }
   render() {
-    const { blueLine, workout, activity, profile } = this.state
+    const { blueLine, secondBlueLine, workout, activity, profile } = this.state
     return (
       <div>
         <div className="main-page">
           <span className="homepage-workout" onClick={this.handleBlueLine}>
             WORKOUTS
           </span>
+          <span
+            className="homepage-featured"
+            onClick={this.handleSecondBlueLine}
+          >
+            FEATURED
+          </span>
           {blueLine ? <div className="blue-line"></div> : null}
+          {secondBlueLine ? <div className="second-blue-line"></div> : null}
           <img src={WorkoutPhoto} className="featured-workout" />
           <span className="featured-header">
             8 WEEK STRENGTH TRAINING REGIMEN
@@ -73,8 +92,12 @@ class MainProfile extends React.Component {
           <div className="other-featured">Other popular programs</div>
         </div>
         {workout ? <Profile /> : null}
-        {activity ? <div>Activity Component</div> : null}
-        {profile ? <div>Profile Component</div> : null}
+        {activity ? <ActivityComponent /> : null}
+        {profile ? (
+          <div>
+            <ProfileStats />
+          </div>
+        ) : null}
         <div className="footer">
           <div className="icon-container">
             <div>

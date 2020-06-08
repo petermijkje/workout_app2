@@ -10,6 +10,18 @@
   z-index: -1;
 }
 
+.second-blue-line {
+  position: absolute;
+  height: 6px;
+  width: 70px;
+  border: #33a1fd 2px;
+  border-style: solid;
+  background-color: #33a1fd;
+  top: 92px;
+  left: 233px;
+  z-index: -1;
+}
+
 .homepage-workout {
   position: absolute;
   font-family: 'Roboto';
@@ -17,6 +29,15 @@
   font-weight: 900;
   top: 78px;
   left: 73px;
+  z-index: -1;
+}
+.homepage-featured {
+  position: absolute;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 900;
+  top: 78px;
+  left: 243px;
   z-index: -1;
 }
 
