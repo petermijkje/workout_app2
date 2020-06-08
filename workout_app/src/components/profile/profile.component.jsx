@@ -60,7 +60,6 @@ class Profile extends React.Component {
       <div className="profile">
         {/* <ProfileStats {...allProfileProps} /> */}
         {/* <MyResponsiveLine data={data} /> */}
-        <br />
         <div className="anatomy-button-div">
           <button className="anatomy-button" onClick={this.chestFunction}>
             Chest
@@ -79,6 +78,9 @@ class Profile extends React.Component {
           </button>
         </div>
         <div className="human-svg">
+          <br />
+          <br />
+          <br />
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="189.349"

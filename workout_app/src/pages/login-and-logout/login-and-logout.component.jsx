@@ -9,7 +9,7 @@ class Login extends React.Component {
   constructor() {
     super()
     this.state = {
-      isLoggedIn: false,
+      isLoggedIn: true,
     }
   }
   render() {
@@ -24,6 +24,9 @@ class Login extends React.Component {
           <div className="login">
             <RetrainLogo />
             <LoginAndSignUp />
+            <button onClick={() => this.setState({ isLoggedIn: true })}>
+              bypass
+            </button>
           </div>
         )}
       </div>
