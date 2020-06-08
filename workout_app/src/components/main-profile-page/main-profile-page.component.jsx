@@ -58,6 +58,8 @@ class MainProfile extends React.Component {
     return (
       <div>
         <div className="main-page">
+          <span className="homepage-workout">WORKOUTS</span>
+          <div className="blue-line"></div>
           <img src={WorkoutPhoto} className="featured-workout" />
           <span className="featured-header">
             8 WEEK STRENGTH TRAINING REGIMEN
