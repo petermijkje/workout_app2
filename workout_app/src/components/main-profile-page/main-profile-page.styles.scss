@@ -1,3 +1,7 @@
+.main-page {
+  z-index: -1;
+}
+
 .footer {
   position: absolute;
   top: 712px;
@@ -21,4 +25,56 @@
   padding-top: 20px;
   padding-left: 33px;
   padding-right: 30px;
+}
+
+.featured-workout {
+  height: 250px;
+  width: 375px;
+  position: absolute;
+  top: 99px;
+  border-radius: 30px 30px 0px 0px;
+  z-index: -1;
+}
+
+.featured-header {
+  position: absolute;
+  left: 20px;
+  top: 117px;
+  font-size: 13px;
+  color: white;
+  font-family: 'Roboto';
+  font-weight: 900;
+  letter-spacing: 2px;
+  z-index: -1;
+}
+
+.featured-banner {
+  position: absolute;
+  height: 20px;
+  width: 120px;
+  top: 265px;
+  left: 20px;
+  background-color: white;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.featured-banner-text {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  z-index: -1;
+}
+
+.other-featured {
+  position: absolute;
+  border-radius: 30px;
+  background-color: white;
+  top: 316px;
+  height: 496px;
+  width: 375px;
+  z-index: -1;
 }
