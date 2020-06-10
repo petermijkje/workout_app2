@@ -91,8 +91,8 @@ class MainProfile extends React.Component {
           </div>
           <div className="other-featured">Other popular programs</div>
         </div>
-        {workout ? <Profile /> : null}
-        {activity ? <ActivityComponent /> : null}
+        {workout ? <ActivityComponent /> : null}
+        {activity ? <Profile /> : null}
         {profile ? (
           <div>
             <ProfileStats />
