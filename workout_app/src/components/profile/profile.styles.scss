@@ -6,16 +6,12 @@
   background-color: white;
 }
 
-.anatomy-button-div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.human-svg {
+  position: absolute;
+  top: 68px;
+  left: 21px;
 }
 
 .anatomy-button {
-  font-size: 25px;
-}
-
-.human-svg {
-  padding: auto;
+  font-size: 20px;
 }
