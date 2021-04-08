@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Photo from "./workout.png";
 
 import HomePage from "./pages/HomePage/HomePage.component";
@@ -15,18 +15,20 @@ import "./App.scss";
 
 function App() {
   return (
-    <div className="App">
-      <img className="image" src={Photo} alt="Lady in Jumping Lunge" />
-      <Header />
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/Login" component={LoginAndLogout} />
-        <Route path="/profile" component={Profile} />
-        <Route component={Error} />
-      </Switch>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <img className="image" src={Photo} alt="Lady in Jumping Lunge" />
+        <Header />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/Login" component={LoginAndLogout} />
+          <Route path="/profile" component={Profile} />
+          <Route component={Error} />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 
