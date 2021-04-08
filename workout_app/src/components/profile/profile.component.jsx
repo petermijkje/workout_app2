@@ -62,23 +62,26 @@ class Profile extends Component {
         {/* <ProfileStats {...allProfileProps} /> */}
         {/* <MyResponsiveLine data={data} /> */}
         <div className="anatomy-button-div">
-          <div className="anatomy-button" onClick={this.chestFunction}>
+          <button className="anatomy-button" onClick={this.chestFunction}>
             Chest
-          </div>
-          <div className="anatomy-button" onClick={this.shouldersFunction}>
+          </button>
+          <button className="anatomy-button" onClick={this.shouldersFunction}>
             Shoulders
-          </div>
-          <div className="anatomy-button" onClick={this.absFunction}>
+          </button>
+          <button className="anatomy-button" onClick={this.absFunction}>
             Abs
-          </div>
-          <div className="anatomy-button" onClick={this.armsFunction}>
-            Arms
-          </div>
-          <div className="anatomy-button" onClick={this.legsFunction}>
-            Legs
-          </div>
+          </button>
+          <button className="anatomy-button" onClick={this.armsFunction}>
+            arms
+          </button>
+          <button className="anatomy-button" onClick={this.legsFunction}>
+            legs
+          </button>
         </div>
         <div className="human-svg">
+          <br />
+          <br />
+          <br />
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="189.349"
