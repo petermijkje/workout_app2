@@ -1,16 +1,16 @@
-import React from 'react'
-import { Switch, Route } from 'react-router-dom'
-import Photo from './workout.png'
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+import Photo from "./workout.png";
 
-import HomePage from './pages/HomePage/HomePage.component'
-import Header from './components/Header/Header.component.jsx'
-import Contact from './pages/Contact/Contact.component.jsx'
-import About from './pages/About/About.component.jsx'
-import LoginAndLogout from './pages/login-and-logout/login-and-logout.component.jsx'
-import Error from './pages/Error/Error.component.jsx'
-import Profile from './components/profile/profile.component.jsx'
+import HomePage from "./pages/HomePage/HomePage.component";
+import Header from "./components/Header/Header.component.jsx";
+import Contact from "./pages/Contact/Contact.component.jsx";
+import About from "./pages/About/About.component.jsx";
+import LoginAndLogout from "./pages/login-and-logout/login-and-logout.component.jsx";
+import Error from "./pages/Error/Error.component.jsx";
+import Profile from "./components/profile/profile.component.jsx";
 
-import './App.scss'
+import "./App.scss";
 // import './debug.css'
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
         <Route component={Error} />
       </Switch>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

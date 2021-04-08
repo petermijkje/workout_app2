@@ -1,61 +1,62 @@
-import React from 'react'
-import ProfileStats from '../profile-stats/profile-stats.component'
+import React from "react";
+import ProfileStats from "../profile-stats/profile-stats.component";
+import { Component } from "react"; //different
 
-import './profile.styles.scss'
-import MyResponsiveLine from '../statistics/statistics.component'
+import "./profile.styles.scss";
+import MyResponsiveLine from "../statistics/statistics.component";
 // import HumanPhoto from '../../images/Human-Body.svg'
 
-class Profile extends React.Component {
+class Profile extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
-      name: 'John',
-      age: '30',
+      name: "John",
+      age: "30",
       height: 70,
-      sex: 'Male',
-      weight: '200',
-      currentGoal: 'Lose Fat',
-      onTrack: 'Yes',
-      chest: '#fec2a1',
-      shoulders: '#efa4a3',
-      abs: '#65b19d',
-      arms: '#c6e59f',
-      legs: '#e1b6de',
+      sex: "Male",
+      weight: "200",
+      currentGoal: "Lose Fat",
+      onTrack: "Yes",
+      chest: "#fec2a1",
+      shoulders: "#efa4a3",
+      abs: "#65b19d",
+      arms: "#c6e59f",
+      legs: "#e1b6de",
       // triceps: '#f5d69f',
       // biceps: '#ffee9f',
       // side_abs: '#d6ebe5',
       // adonis_belt: '#65b19d',
-    }
-    this.chestFunction = this.chestFunction.bind(this)
-    this.shouldersFunction = this.shouldersFunction.bind(this)
-    this.absFunction = this.absFunction.bind(this)
-    this.armsFunction = this.armsFunction.bind(this)
-    this.legsFunction = this.legsFunction.bind(this)
+    };
+    this.chestFunction = this.chestFunction.bind(this);
+    this.shouldersFunction = this.shouldersFunction.bind(this);
+    this.absFunction = this.absFunction.bind(this);
+    this.armsFunction = this.armsFunction.bind(this);
+    this.legsFunction = this.legsFunction.bind(this);
   }
   chestFunction = () => {
-    const toggle = this.state.chest === '#fec2a1' ? 'red' : '#fec2a1'
-    this.setState({ chest: toggle })
-  }
+    const toggle = this.state.chest === "#fec2a1" ? "red" : "#fec2a1";
+    this.setState({ chest: toggle });
+  };
 
   shouldersFunction = () => {
-    const toggle = this.state.shoulders === '#efa4a3' ? 'red' : '#efa4a3'
-    this.setState({ shoulders: toggle })
-  }
+    const toggle = this.state.shoulders === "#efa4a3" ? "red" : "#efa4a3";
+    this.setState({ shoulders: toggle });
+  };
   absFunction = () => {
-    const toggle = this.state.abs === '#65b19d' ? 'red' : '#65b19d'
-    this.setState({ abs: toggle })
-  }
+    const toggle = this.state.abs === "#65b19d" ? "red" : "#65b19d";
+    this.setState({ abs: toggle });
+  };
   armsFunction = () => {
-    const toggle = this.state.arms === '#c6e59f' ? 'red' : '#c6e59f'
-    this.setState({ arms: toggle })
-  }
+    const toggle = this.state.arms === "#c6e59f" ? "red" : "#c6e59f";
+    this.setState({ arms: toggle });
+  };
   legsFunction = () => {
-    const toggle = this.state.legs === '#e1b6de' ? 'red' : '#e1b6de'
-    this.setState({ legs: toggle })
-  }
+    const toggle = this.state.legs === "#e1b6de" ? "red" : "#e1b6de";
+    this.setState({ legs: toggle });
+  };
   render() {
     // const { ...allProfileProps } = this.state
-    const { data } = this.state
+    const { data } = this.state;
     return (
       <div className="profile">
         {/* <ProfileStats {...allProfileProps} /> */}
@@ -811,7 +812,7 @@ class Profile extends React.Component {
           </svg>
         </div>
       </div>
-    )
+    );
   }
 }
-export default Profile
+export default Profile;
