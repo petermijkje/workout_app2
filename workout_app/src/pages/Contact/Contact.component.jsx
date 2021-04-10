@@ -22,12 +22,12 @@ function Contact() {
           placeholder="Enter email here..."
         ></input>
         <div>MESSAGE</div>
-        <input
+        <textarea
           className="contact-us-input"
           id="message"
           placeholder="Enter text here..."
-        ></input>
-        <button></button>
+        ></textarea>
+        <button>contact us</button>
       </div>
       {/*
       <img class="social-logo" id="instagram" src={Instagram} alt="instagram-logo" />
