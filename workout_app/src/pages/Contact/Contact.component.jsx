@@ -4,6 +4,11 @@ import RetrainLogo from "../../components/retrain-logo/RetrainLogo.component";
 import Instagram from "../../instagram.webp";
 import Twitter from "../../twitter.webp";
 import Facebook from "../../facebook.webp";
+import Person from "../../images/person.png"
+
+import Header from "../../components/Header/Header.component.jsx"
+import Email from "../../images/email.png"
+import Message from "../../images/message.png"
 
 function Contact() {
   return (
@@ -11,17 +16,23 @@ function Contact() {
       <div className="contact-us">
         <h2>CONTACT US</h2>
         <div className="contact-text">Feel Free to leave us a message.</div>
-        <div>NAME</div>
+        <div class="contact-us-text">
+          <img class="contact-us-image" src={Person} />
+          NAME</div>
         <input
           className="contact-us-input"
           placeholder="Enter name here..."
         ></input>
-        <div>EMAIL</div>
+        <div class="contact-us-text">          
+          <img class="contact-us-image" src={Email} />
+          EMAIL
+        </div>
         <input
           className="contact-us-input"
           placeholder="Enter email here..."
         ></input>
-        <div>MESSAGE</div>
+        <div class="contact-us-text">          <img class="contact-us-image" id="message-icon" src={Message} />
+MESSAGE</div>
         <textarea
           className="contact-us-input"
           id="message"
