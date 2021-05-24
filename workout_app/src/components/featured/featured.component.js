@@ -1,7 +1,10 @@
 import React from "react";
 import WorkoutPhoto from "../../images/featured-workout.jpg";
+import OtherFeatured from "../other-featured/other-featured.components";
 
 export default function Featured(props) {
+  const numbers = [1, 2, 3, 4, 5];
+
   return (
     <div>
       <img src={WorkoutPhoto} className="featured-workout" />
@@ -9,6 +12,9 @@ export default function Featured(props) {
       <div className="featured-banner">FEATURED</div>
       <div className="other-featured">
         <div className="other-featured-banner">Other featured programs</div>
+        <div className="other-featured-boxes">
+          <OtherFeatured numbers={numbers} />
+        </div>
       </div>
     </div>
   );

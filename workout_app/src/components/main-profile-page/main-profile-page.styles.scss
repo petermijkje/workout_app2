@@ -102,7 +102,15 @@
   line-height: 19px;
 }
 
-.featured-banner-text {
+.other-featured-banner {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-family: "Roboto";
 }
 
 .other-featured {
