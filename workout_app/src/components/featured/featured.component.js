@@ -5,8 +5,17 @@ import WorkoutPhoto from "../../images/featured-workout.jpg";
 import OtherFeatured from "../other-featured/other-featured.components";
 
 export default function Featured(props) {
-  const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-
+  let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+  let type = [
+    "HIIT",
+    "Sprints",
+    "Arm",
+    "Legs",
+    "Abs",
+    "back",
+    "Track",
+    "Crossfit",
+  ];
   return (
     <div>
       <img src={WorkoutPhoto} className="featured-workout" />
@@ -15,8 +24,8 @@ export default function Featured(props) {
       <div className="other-featured">
         <div className="other-featured-banner">Other featured programs</div>
         <div className="other-featured-boxes">
-          <OtherFeatured numbers={numbers} />
-          <OtherFeatured numbers={numbers} />
+          <OtherFeatured numbers={numbers} type={type} />
+          <OtherFeatured numbers={numbers} type={type} />
         </div>
       </div>
     </div>

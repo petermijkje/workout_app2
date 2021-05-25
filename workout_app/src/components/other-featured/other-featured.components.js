@@ -1,14 +1,9 @@
 import React from "react";
-import WorkoutPhoto from "../../images/general-workout.jpg";
 
-import "./other-featured.styles.scss"
+import "./other-featured.styles.scss";
 
 export default function OtherFeatured(props) {
-  const numbers = props.numbers;
-  const listItems = numbers.map((number) => (
-    <div className="featured">
-      {number}
-    </div>
-  ));
+  const type = props.type;
+  const listItems = type.map((type) => <div className="featured">{type}</div>);
   return <div className="featured-container">{listItems}</div>;
 }
