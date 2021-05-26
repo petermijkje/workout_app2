@@ -1,7 +1,50 @@
+.todays-workout-div {
+  position: absolute;
+  height: 500px;
+  overflow-y: auto;
+  bottom: 100px;
+}
+
 .activity-div {
   position: absolute;
   top: 0px;
   height: 812px;
   width: 375px;
   background-color: white;
+}
+
+.add-remove-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.add-remove {
+  width: 50%;
+  text-align: center;
+}
+
+.workout-image {
+  height: 70px;
+  width: 70px;
+  border: blue solid 1px;
+  border-radius: 10px;
+}
+
+.exercise-container {
+  display: flex;
+  overflow-y: auto;
+  flex-wrap: wrap;
+  font-size: 17px;
+  padding: 20px 20px;
+  text-align: right;
+}
+
+.exercise-div {
+  width: 46px;
+  display: inline-block;
+}
+
+.exercise-name {
+  width: 233px;
+  margin-bottom: 25px;
 }

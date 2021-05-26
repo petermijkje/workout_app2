@@ -6,8 +6,9 @@ import { ResponsiveLine } from '@nivo/line'
 // website examples showcase many properties,
 // you'll often use just a few of them.
 
-const MyResponsiveLine = ({ data }) => (
-  <div className="line-graph" style={{ height: 500 }}>
+const MyResponsiveLine = ({data}) => (
+  
+  <div className="line-graph" style={{ height: 500, width: 450 }}>
     <ResponsiveLine
       data={data}
       margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
@@ -40,7 +41,7 @@ const MyResponsiveLine = ({ data }) => (
         legendPosition: 'middle',
       }}
       colors={{ scheme: 'nivo' }}
-      lineWidth={7}
+      lineWidth={1}
       pointSize={10}
       pointColor={{ theme: 'background' }}
       pointBorderWidth={2}
