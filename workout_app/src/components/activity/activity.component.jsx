@@ -1,7 +1,7 @@
 import React from "react";
-import Shoulders from "../../images/shoulders.png";
-
 import "./activity.styles.scss";
+
+import Shoulders from "../../images/shoulders.png";
 
 const pullExerciseDay = () => {
   const workoutObject = {
