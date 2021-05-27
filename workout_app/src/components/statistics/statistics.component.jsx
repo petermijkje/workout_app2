@@ -1,74 +1,70 @@
-import React from 'react'
-import { ResponsiveLine } from '@nivo/line'
+import React from "react";
+import { ResponsiveLine } from "@nivo/line";
 // make sure parent container have a defined height when using
 // responsive component, otherwise height will be 0 and
 // no chart will be rendered.
 // website examples showcase many properties,
 // you'll often use just a few of them.
 
-const MyResponsiveLine = ({data}) => (
-  
-  <div className="line-graph" style={{ height: 500, width: 450 }}>
+const MyResponsiveLine = ({ data }) => (
+  <div style={{ height: 375, width: 375 }}>
     <ResponsiveLine
       data={data}
       margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
-      xScale={{ type: 'point' }}
+      xScale={{ type: "point" }}
       yScale={{
-        type: 'linear',
-        min: 'auto',
-        max: 'auto',
+        type: "linear",
+        min: "auto",
+        max: "auto",
         stacked: true,
         reverse: false,
       }}
+      yFormat=" >-.2f"
       axisTop={null}
       axisRight={null}
       axisBottom={{
-        orient: 'bottom',
+        orient: "bottom",
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: 'transportation',
+        legend: "transportation",
         legendOffset: 36,
-        legendPosition: 'middle',
+        legendPosition: "middle",
       }}
       axisLeft={{
-        orient: 'left',
+        orient: "left",
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: 'count',
+        legend: "count",
         legendOffset: -40,
-        legendPosition: 'middle',
+        legendPosition: "middle",
       }}
-      colors={{ scheme: 'nivo' }}
-      lineWidth={1}
       pointSize={10}
-      pointColor={{ theme: 'background' }}
+      pointColor={{ theme: "background" }}
       pointBorderWidth={2}
-      pointBorderColor={{ from: 'serieColor' }}
-      pointLabel="y"
+      pointBorderColor={{ from: "serieColor" }}
       pointLabelYOffset={-12}
       useMesh={true}
       legends={[
         {
-          anchor: 'bottom-right',
-          direction: 'column',
+          anchor: "bottom",
+          direction: "row",
           justify: false,
-          translateX: 100,
-          translateY: 0,
-          itemsSpacing: 0,
-          itemDirection: 'left-to-right',
-          itemWidth: 80,
+          translateX: 3,
+          translateY: 140,
+          itemWidth: 100,
           itemHeight: 20,
-          itemOpacity: 0.75,
-          symbolSize: 12,
-          symbolShape: 'circle',
-          symbolBorderColor: 'rgba(0, 0, 0, .5)',
+          itemsSpacing: 4,
+          symbolSize: 20,
+          symbolShape: "circle",
+          itemDirection: "left-to-right",
+          itemTextColor: "#777",
           effects: [
             {
-              on: 'hover',
+              on: "hover",
               style: {
-                itemBackground: 'rgba(0, 0, 0, .03)',
+                itemBackground: "rgba(0, 0, 0, .03)",
                 itemOpacity: 1,
               },
             },
@@ -77,6 +73,6 @@ const MyResponsiveLine = ({data}) => (
       ]}
     />
   </div>
-)
+);
 
-export default MyResponsiveLine
+export default MyResponsiveLine;
