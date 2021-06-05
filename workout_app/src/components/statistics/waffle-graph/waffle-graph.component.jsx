@@ -1,3 +1,5 @@
+// currently inoperable. WOuld love to have this sorted out, but not necesity.
+
 // import React from "react";
 // import { ResponsiveCalendar } from "@nivo/calendar";
 // // make sure parent container have a defined height when using
